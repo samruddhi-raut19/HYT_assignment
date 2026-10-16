@@ -1,0 +1,9 @@
+postings.csv
+Resume.csv
+resume_extracted/
+postings_extracted/
+report.md
+tmp/
+outputs/sample_screening.json
+__pycache__/
+*.pyc

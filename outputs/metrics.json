@@ -1,0 +1,107 @@
+{
+  "n": 200,
+  "pipeline_precision": 0.286,
+  "pipeline_recall": 0.167,
+  "pipeline_accuracy": 0.85,
+  "ndcg_global": 0.627,
+  "keyword_mean_score": 6.92,
+  "tfidf_mean_score": 63.75,
+  "sample_results": [
+    {
+      "job_id": 91700727,
+      "resume_id": 10089434,
+      "label": 0,
+      "fit_score": 30.0,
+      "decision": "human_review",
+      "evidence": [],
+      "gaps": []
+    },
+    {
+      "job_id": 91700727,
+      "resume_id": 10247517,
+      "label": 0,
+      "fit_score": 30.0,
+      "decision": "human_review",
+      "evidence": [],
+      "gaps": []
+    },
+    {
+      "job_id": 91700727,
+      "resume_id": 93112113,
+      "label": 0,
+      "fit_score": 30.0,
+      "decision": "human_review",
+      "evidence": [],
+      "gaps": []
+    },
+    {
+      "job_id": 56482768,
+      "resume_id": 10247517,
+      "label": 1,
+      "fit_score": 41.25,
+      "decision": "human_review",
+      "evidence": [
+        "excel"
+      ],
+      "gaps": []
+    },
+    {
+      "job_id": 56482768,
+      "resume_id": 10265057,
+      "label": 1,
+      "fit_score": 41.25,
+      "decision": "human_review",
+      "evidence": [
+        "excel"
+      ],
+      "gaps": []
+    },
+    {
+      "job_id": 56482768,
+      "resume_id": 93112113,
+      "label": 0,
+      "fit_score": 0.0,
+      "decision": "human_review",
+      "evidence": [],
+      "gaps": [
+        "excel"
+      ]
+    },
+    {
+      "job_id": 69333422,
+      "resume_id": 10089434,
+      "label": 0,
+      "fit_score": 15.0,
+      "decision": "human_review",
+      "evidence": [],
+      "gaps": []
+    },
+    {
+      "job_id": 69333422,
+      "resume_id": 10247517,
+      "label": 0,
+      "fit_score": 10.0,
+      "decision": "human_review",
+      "evidence": [],
+      "gaps": []
+    },
+    {
+      "job_id": 69333422,
+      "resume_id": 93112113,
+      "label": 0,
+      "fit_score": 10.0,
+      "decision": "human_review",
+      "evidence": [],
+      "gaps": []
+    },
+    {
+      "job_id": 95428182,
+      "resume_id": 10089434,
+      "label": 0,
+      "fit_score": 30.0,
+      "decision": "human_review",
+      "evidence": [],
+      "gaps": []
+    }
+  ]
+}

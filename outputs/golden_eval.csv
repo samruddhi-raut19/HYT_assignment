@@ -1,0 +1,201 @@
+label,skill_overlap,resume_id,job_id,job_title,resume_category,label_source
+0,0,10089434,91700727,Economic Development and Planning Intern,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,10247517,91700727,Economic Development and Planning Intern,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,93112113,91700727,Economic Development and Planning Intern,HR,weak_draft_needs_human_audit
+1,1,10247517,56482768,Appalachian Highlands Women's Business Center,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+1,1,10265057,56482768,Appalachian Highlands Women's Business Center,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,93112113,56482768,Appalachian Highlands Women's Business Center,HR,weak_draft_needs_human_audit
+0,0,10089434,69333422,Senior Product Marketing Manager,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,10247517,69333422,Senior Product Marketing Manager,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,93112113,69333422,Senior Product Marketing Manager,HR,weak_draft_needs_human_audit
+0,0,10089434,95428182,Administrative Coordinator,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,10247517,95428182,Administrative Coordinator,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,93112113,95428182,Administrative Coordinator,HR,weak_draft_needs_human_audit
+0,1,10247517,115639136,Controller,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,1,10265057,115639136,Controller,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,93112113,115639136,Controller,HR,weak_draft_needs_human_audit
+0,1,10247517,266566927,Marketing & Office Coordinator,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,1,10265057,266566927,Marketing & Office Coordinator,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,93112113,266566927,Marketing & Office Coordinator,HR,weak_draft_needs_human_audit
+0,0,10089434,658723396,External Mortgage Loan Officer,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,10247517,658723396,External Mortgage Loan Officer,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,93112113,658723396,External Mortgage Loan Officer,HR,weak_draft_needs_human_audit
+0,0,10089434,1014822088,Marketing Specialist,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,10247517,1014822088,Marketing Specialist,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,93112113,1014822088,Marketing Specialist,HR,weak_draft_needs_human_audit
+0,0,10089434,1093227543,Sales Associate Natural Food Products,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,10247517,1093227543,Sales Associate Natural Food Products,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,93112113,1093227543,Sales Associate Natural Food Products,HR,weak_draft_needs_human_audit
+0,0,10089434,1143359956,National Sales Manager,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,10247517,1143359956,National Sales Manager,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,93112113,1143359956,National Sales Manager,HR,weak_draft_needs_human_audit
+0,1,10247517,1448163866,Office Manager,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,1,10265057,1448163866,Office Manager,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,93112113,1448163866,Office Manager,HR,weak_draft_needs_human_audit
+0,0,10089434,1880409118,Board Certified Behavior Analyst,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,10247517,1880409118,Board Certified Behavior Analyst,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,93112113,1880409118,Board Certified Behavior Analyst,HR,weak_draft_needs_human_audit
+1,2,10247517,2147609785,FP&A Analyst,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+1,2,10265057,2147609785,FP&A Analyst,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,93112113,2147609785,FP&A Analyst,HR,weak_draft_needs_human_audit
+0,1,10247517,2428973832,Staff Accountant,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,1,10265057,2428973832,Staff Accountant,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,93112113,2428973832,Staff Accountant,HR,weak_draft_needs_human_audit
+1,1,10247517,2735151240,Intern- Business Analytics,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+1,1,10265057,2735151240,Intern- Business Analytics,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,93112113,2735151240,Intern- Business Analytics,HR,weak_draft_needs_human_audit
+0,0,10089434,2954591060,Social Media Coordinator,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,10247517,2954591060,Social Media Coordinator,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,93112113,2954591060,Social Media Coordinator,HR,weak_draft_needs_human_audit
+0,0,10089434,2974397965,Marketing Coordinator,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,10247517,2974397965,Marketing Coordinator,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,93112113,2974397965,Marketing Coordinator,HR,weak_draft_needs_human_audit
+0,0,10089434,3040487795,Digital Marketing Intern,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,10247517,3040487795,Digital Marketing Intern,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,93112113,3040487795,Digital Marketing Intern,HR,weak_draft_needs_human_audit
+0,2,11957080,3127577086,Histologist - HT,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,2,16186411,3127577086,Histologist - HT,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,93112113,3127577086,Histologist - HT,HR,weak_draft_needs_human_audit
+0,0,10089434,3189117072,Client Service Associate / Practice Manager,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,10247517,3189117072,Client Service Associate / Practice Manager,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,93112113,3189117072,Client Service Associate / Practice Manager,HR,weak_draft_needs_human_audit
+1,2,10265057,3245063922,Data Architect,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+1,2,13405733,3245063922,Data Architect,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+1,0,93112113,3245063922,Data Architect,HR,weak_draft_needs_human_audit
+1,2,20879311,3251984218,SAP BTP,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,2,83816738,3251984218,SAP BTP,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,93112113,3251984218,SAP BTP,HR,weak_draft_needs_human_audit
+0,1,10247517,3260455681,Operations Specialist,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,1,10265057,3260455681,Operations Specialist,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,93112113,3260455681,Operations Specialist,HR,weak_draft_needs_human_audit
+0,0,10089434,3270034794,Commercial Construction Project Managers/Superintendents,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,10247517,3270034794,Commercial Construction Project Managers/Superintendents,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,93112113,3270034794,Commercial Construction Project Managers/Superintendents,HR,weak_draft_needs_human_audit
+0,1,10247517,3297645846,Contract Administrator,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,10265057,3297645846,Contract Administrator,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,93112113,3297645846,Contract Administrator,HR,weak_draft_needs_human_audit
+0,0,10089434,3363439517,Sanitation Supervisor,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,10247517,3363439517,Sanitation Supervisor,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,93112113,3363439517,Sanitation Supervisor,HR,weak_draft_needs_human_audit
+1,1,10247517,3383214611,Account Executive - Mid-Market,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+1,1,10265057,3383214611,Account Executive - Mid-Market,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,93112113,3383214611,Account Executive - Mid-Market,HR,weak_draft_needs_human_audit
+0,0,10089434,3422171886,Social Media Manager and Graphic Designer,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,10247517,3422171886,Social Media Manager and Graphic Designer,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,93112113,3422171886,Social Media Manager and Graphic Designer,HR,weak_draft_needs_human_audit
+0,0,10089434,3431736996,Client Service Representative,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,10247517,3431736996,Client Service Representative,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,93112113,3431736996,Client Service Representative,HR,weak_draft_needs_human_audit
+0,0,10089434,3452435884,Account Manager,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,10247517,3452435884,Account Manager,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,93112113,3452435884,Account Manager,HR,weak_draft_needs_human_audit
+1,6,16186411,3475933396,Senior Developer,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+1,6,26746496,3475933396,Senior Developer,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,93112113,3475933396,Senior Developer,HR,weak_draft_needs_human_audit
+0,0,10089434,3478606637,Energy and Asset Coordinator,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,10247517,3478606637,Energy and Asset Coordinator,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,93112113,3478606637,Energy and Asset Coordinator,HR,weak_draft_needs_human_audit
+0,0,10089434,3514667133,Marketing Manager,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,10247517,3514667133,Marketing Manager,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,93112113,3514667133,Marketing Manager,HR,weak_draft_needs_human_audit
+0,0,10089434,3514683108,Associate Brand Manager,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,10247517,3514683108,Associate Brand Manager,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,93112113,3514683108,Associate Brand Manager,HR,weak_draft_needs_human_audit
+0,0,10089434,3530975184,Administrator of College & Career Development,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,10247517,3530975184,Administrator of College & Career Development,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,93112113,3530975184,Administrator of College & Career Development,HR,weak_draft_needs_human_audit
+0,0,10089434,3540371917,Enterprise Data & Analytics Infrastructure Manager,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,10247517,3540371917,Enterprise Data & Analytics Infrastructure Manager,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,93112113,3540371917,Enterprise Data & Analytics Infrastructure Manager,HR,weak_draft_needs_human_audit
+0,0,10089434,3564676727,Corporate Controller,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,10247517,3564676727,Corporate Controller,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,93112113,3564676727,Corporate Controller,HR,weak_draft_needs_human_audit
+0,0,10089434,3582587683,Accounts Analyst,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,10247517,3582587683,Accounts Analyst,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,93112113,3582587683,Accounts Analyst,HR,weak_draft_needs_human_audit
+1,3,83816738,3586167732,Senior Software Engineer,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+1,1,10641230,3586167732,Senior Software Engineer,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,93112113,3586167732,Senior Software Engineer,HR,weak_draft_needs_human_audit
+0,0,10089434,3594311833,Marketing Manager,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,10247517,3594311833,Marketing Manager,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,93112113,3594311833,Marketing Manager,HR,weak_draft_needs_human_audit
+1,1,10247517,3594710940,"Scientific Project Manager for Food, Beverage, and Consumer Packaged Goods Industries (Project Architect | PA)",INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+1,1,10265057,3594710940,"Scientific Project Manager for Food, Beverage, and Consumer Packaged Goods Industries (Project Architect | PA)",INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,93112113,3594710940,"Scientific Project Manager for Food, Beverage, and Consumer Packaged Goods Industries (Project Architect | PA)",HR,weak_draft_needs_human_audit
+0,0,10089434,3635916819,Medical Consultant,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,10247517,3635916819,Medical Consultant,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,93112113,3635916819,Medical Consultant,HR,weak_draft_needs_human_audit
+0,0,10089434,3651735073,Director of Finance,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,10247517,3651735073,Director of Finance,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,93112113,3651735073,Director of Finance,HR,weak_draft_needs_human_audit
+0,0,10089434,3656167404,Executive Personal Assistant,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,10247517,3656167404,Executive Personal Assistant,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,93112113,3656167404,Executive Personal Assistant,HR,weak_draft_needs_human_audit
+0,0,10089434,3666781416,Senior Electronics Design Engineer,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,10247517,3666781416,Senior Electronics Design Engineer,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,93112113,3666781416,Senior Electronics Design Engineer,HR,weak_draft_needs_human_audit
+0,0,10089434,3678077169,Level 1 Designer,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,10247517,3678077169,Level 1 Designer,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,93112113,3678077169,Level 1 Designer,HR,weak_draft_needs_human_audit
+0,0,10089434,3687125020,Sales Director - Part-Time - Remote,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,10247517,3687125020,Sales Director - Part-Time - Remote,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,93112113,3687125020,Sales Director - Part-Time - Remote,HR,weak_draft_needs_human_audit
+0,0,10089434,3693886408,FIELD SALES REPRESENTATIVE - North Carolina,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,10247517,3693886408,FIELD SALES REPRESENTATIVE - North Carolina,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,93112113,3693886408,FIELD SALES REPRESENTATIVE - North Carolina,HR,weak_draft_needs_human_audit
+0,1,10247517,3698445650,Fitness Sales General Manager,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,1,10265057,3698445650,Fitness Sales General Manager,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,93112113,3698445650,Fitness Sales General Manager,HR,weak_draft_needs_human_audit
+0,1,10265057,3702659694,"Managed File Transfer Specialist (connect direct , NDM) | REMOTE ROLE",INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,1,12635195,3702659694,"Managed File Transfer Specialist (connect direct , NDM) | REMOTE ROLE",INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,93112113,3702659694,"Managed File Transfer Specialist (connect direct , NDM) | REMOTE ROLE",HR,weak_draft_needs_human_audit
+0,0,10089434,3709767981,Sales & Design Consultant,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,10247517,3709767981,Sales & Design Consultant,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,93112113,3709767981,Sales & Design Consultant,HR,weak_draft_needs_human_audit
+0,0,10089434,3713452241,Director of Compliance,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,10247517,3713452241,Director of Compliance,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,93112113,3713452241,Director of Compliance,HR,weak_draft_needs_human_audit
+0,0,10089434,3715249215,Editor,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,10247517,3715249215,Editor,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,93112113,3715249215,Editor,HR,weak_draft_needs_human_audit
+0,0,10089434,3715436359,Digital Marketing Manager,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,10247517,3715436359,Digital Marketing Manager,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,93112113,3715436359,Digital Marketing Manager,HR,weak_draft_needs_human_audit
+0,1,10247517,3726732147,Shop Supervisor,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,1,10265057,3726732147,Shop Supervisor,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,93112113,3726732147,Shop Supervisor,HR,weak_draft_needs_human_audit
+0,1,10247517,3726764279,Senior Communications and Development Manager,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,1,10265057,3726764279,Senior Communications and Development Manager,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,93112113,3726764279,Senior Communications and Development Manager,HR,weak_draft_needs_human_audit
+1,2,83816738,3728459637,Principal Backend Engineer,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+1,1,20824105,3728459637,Principal Backend Engineer,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,93112113,3728459637,Principal Backend Engineer,HR,weak_draft_needs_human_audit
+0,0,10089434,3728884217,Loyalty Content Writer & Operations Manager,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,10247517,3728884217,Loyalty Content Writer & Operations Manager,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,93112113,3728884217,Loyalty Content Writer & Operations Manager,HR,weak_draft_needs_human_audit
+0,0,10089434,3736684097,Program Manager,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,10247517,3736684097,Program Manager,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,93112113,3736684097,Program Manager,HR,weak_draft_needs_human_audit
+0,1,10247517,3738844984,Fractional CFO,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,1,10265057,3738844984,Fractional CFO,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,93112113,3738844984,Fractional CFO,HR,weak_draft_needs_human_audit
+1,4,83816738,3742692445,Sr Data Engineer with Kafka,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+1,3,20824105,3742692445,Sr Data Engineer with Kafka,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,93112113,3742692445,Sr Data Engineer with Kafka,HR,weak_draft_needs_human_audit
+1,3,10641230,3743875708,Unpaid Internship: Development Team,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+1,3,16186411,3743875708,Unpaid Internship: Development Team,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,93112113,3743875708,Unpaid Internship: Development Team,HR,weak_draft_needs_human_audit
+0,0,10089434,3744106614,Swiss Setup Operator,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,10247517,3744106614,Swiss Setup Operator,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,93112113,3744106614,Swiss Setup Operator,HR,weak_draft_needs_human_audit
+0,1,10247517,3745677818,Manager of Human Resources,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,1,10265057,3745677818,Manager of Human Resources,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,93112113,3745677818,Manager of Human Resources,HR,weak_draft_needs_human_audit
+0,1,10247517,3747072157,Project Manager,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,1,10265057,3747072157,Project Manager,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,93112113,3747072157,Project Manager,HR,weak_draft_needs_human_audit
+0,1,10247517,3756640753,Real Estate Agent,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,1,10265057,3756640753,Real Estate Agent,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,93112113,3756640753,Real Estate Agent,HR,weak_draft_needs_human_audit
+0,0,10089434,3757672875,Care Coordinator,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
+0,0,10247517,3757672875,Care Coordinator,INFORMATION-TECHNOLOGY,weak_draft_needs_human_audit
