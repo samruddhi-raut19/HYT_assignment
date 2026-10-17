@@ -3,27 +3,37 @@
   "pipeline_precision": 0.231,
   "pipeline_recall": 0.125,
   "pipeline_accuracy": 0.845,
-  "ndcg_global": 0.62,
+  "ndcg_global": 0.624,
   "keyword_mean_score": 6.92,
   "tfidf_mean_score": 63.75,
+  "keyword_metrics_at_62": {
+    "precision": 1.0,
+    "recall": 0.125,
+    "accuracy": 0.895
+  },
+  "tfidf_metrics_at_62": {
+    "precision": 0.094,
+    "recall": 0.542,
+    "accuracy": 0.32
+  },
   "threshold_analysis": [
     {
       "threshold": 40,
-      "precision": 0.34,
-      "recall": 0.708,
-      "accuracy": 0.8
+      "precision": 0.365,
+      "recall": 0.792,
+      "accuracy": 0.81
     },
     {
       "threshold": 42,
-      "precision": 0.368,
-      "recall": 0.583,
-      "accuracy": 0.83
+      "precision": 0.4,
+      "recall": 0.667,
+      "accuracy": 0.84
     },
     {
       "threshold": 44,
-      "precision": 0.351,
-      "recall": 0.542,
-      "accuracy": 0.825
+      "precision": 0.385,
+      "recall": 0.625,
+      "accuracy": 0.835
     },
     {
       "threshold": 46,

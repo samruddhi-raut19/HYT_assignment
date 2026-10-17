@@ -1,39 +1,93 @@
-# HYT Screening Assistant Report
+# HYT Graduate 2027 Assignment Report
 
 **Candidate:** Samruddhi Raut  
-**Target roles:** Data Analyst and Business Analyst  
+**Target job family:** Data Analyst and Business Analyst  
 **Repository:** https://github.com/samruddhi-raut19/HYT_assignment
 
-## Problem framing
+## 1. Problem framing
 
-For an HYT recruiter, “good” means a candidate is plausibly qualified for a Data Analyst or Business Analyst role, the recommendation is quick to verify, and missing requirements are visible. This system is a screening aid, not a hiring decision-maker. It does not infer personality, culture fit, protected traits, salary, or interview performance.
+For an HYT recruiter, a good screening assistant reduces reading time without silently rejecting plausible candidates. It should make a recommendation quickly verifiable: the score must show supporting resume evidence, missing must-have requirements must be named, and uncertain cases must be escalated.
 
-## Method
+This project is a deterministic, local screening aid. It extracts skills, years of experience, education, role/category cues, location, and must-have versus nice-to-have requirements. It produces a 0-100 fit score and either advances a candidate or sends the pair to human review. The policy is intentionally cost-sensitive: a false rejection is worse than an additional recruiter read.
 
-The deterministic extractor identifies technology skills, education cues, years of experience, role/category cues, and location. Job sentences are separated into must-have and nice-to-have requirements using explicit language. The score weights skills most heavily, then experience, education, location, and job-family cues. Scores below the advance threshold or with substantial must-have gaps go to a human recruiter.
+I chose not to build personality or culture-fit inference, protected-trait prediction, salary prediction, interview prediction, contact-data enrichment, or an autonomous rejection action. The system never rejects; it only advances or escalates.
 
-## Baselines and results
+## 2. Data and reproducibility
 
-On the saved 200-row draft-labelled run, the pipeline produced precision 0.231, recall 0.125, accuracy 0.845, and global NDCG 0.620. The keyword-overlap and TF-IDF cosine baselines have mean scores of 6.92 and 63.75. These are agreement measurements against weak labels, not recruiter-validated performance. A threshold sweep shows threshold 50 improves draft recall to 0.500 at precision 0.333, while the production threshold remains 62 until human labels support a change.
+The primary inputs are the supplied Resume Dataset (about 2.4k resumes) and LinkedIn Job Postings data (about 120k postings). The default run reads the first 300 postings as a documented subsample and reads the resume file in full. Raw resume and job CSV files are not published in the repository.
 
-## Fairness check
+Run from the repository with:
 
-The counterfactual test duplicates the same resume while changing only name, gender-coded language, and college name. On 40 generated variants, the current run produced a maximum absolute score delta of 0.0 and 0 decision shifts. This is a useful regression result, not proof of fairness: the test only covers the implemented cues and the extractor’s current vocabulary.
+```powershell
+& "$env:USERPROFILE\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe" screening_pipeline.py
+& "$env:USERPROFILE\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe" fairness_check.py
+```
 
-## Failure analysis
+The run writes metrics, sample explanations, fairness results, and reviewer templates under `outputs/`. The pipeline is API-free and reproducible in under 15 minutes on the documented subsample.
 
-1. Synonyms and abbreviations can still be missed even after common aliases such as PowerBI, sklearn, Postgres, and MS Excel were normalized; inspect low-overlap rows in the review template.
-2. Years-of-experience regexes can confuse a project date or graduation year with experience.
-3. Job descriptions often mix mandatory and optional language in one sentence.
-4. Location matching is weak for remote, hybrid, and relocation cases.
-5. Category-based hard negatives can be misleading when candidates are changing careers.
+## 3. Method and decision policy
 
-These failures motivate human escalation and should be represented in the audited golden set.
+Job and resume text are normalized against an auditable skill vocabulary with common aliases such as PowerBI, sklearn, Postgres, MS Excel, and AWS. Requirement sentences containing `required`, `must`, `minimum`, or `qualifications` are treated as must-have evidence; `preferred`, `plus`, `bonus`, and `desired` indicate nice-to-have evidence.
 
-## What is misleading about my headline number?
+The score weights are skills 55%, experience 20%, education 10%, role/category 10%, and location 5%. A candidate advances at a score of at least 62 when the missing must-have count is not substantial. Otherwise the result is `human_review`. Every result includes overlapping evidence and missing must-have gaps.
 
-Any single headline score is misleading because the evaluation set has only 24 positive examples and may still contain subjective labels. Accuracy is especially misleading here because the majority class is “not relevant.” The honest headline is therefore: “A reproducible screening prototype with 0.845 accuracy and 0.620 NDCG on a 200-pair weak-labelled draft, but low recall that requires human-label validation and further tuning.”
+## 4. Evaluation and baselines
 
-## One more week
+The harness evaluates the saved 200-row draft set and compares the screening policy with two baselines: trivial skill-overlap and TF-IDF cosine similarity. The current run produced:
 
-The engineering work is now in place: counterfactual score/decision summaries, common skill aliases, threshold analysis, and reviewer-ready templates. The remaining submission work is to hand-label the 200 pairs and have two human raters score the 30 explanation rows, then record agreement before using either result as a headline number.
+| Method | Precision | Recall | Accuracy | Ranking |
+|---|---:|---:|---:|---:|
+| Keyword overlap | 1.000 | 0.125 | 0.895 | - |
+| TF-IDF cosine | 0.094 | 0.542 | 0.320 | - |
+| Screening pipeline | 0.231 | 0.125 | 0.845 | NDCG 0.624 |
+
+The baseline figures use the same score threshold of 62 for comparability. The evaluation set has 24 positive draft labels. There are no field-level hand labels, so extraction F1 is not claimed.
+
+The pipeline is conservative: it has higher draft accuracy than the threshold-50 alternative but lower recall. The threshold sweep is recorded in `outputs/metrics.json`; threshold selection should be revisited after human labeling and a recruiter-defined false-rejection budget.
+
+## 5. Golden evaluation set
+
+The repository contains 200 deterministic draft pairs in `outputs/golden_eval.csv`. The draft sampler includes in-domain analyst-category resumes, unrelated-category hard negatives, high-overlap candidates, and low-overlap candidates. Labels are explicitly marked `weak_draft_needs_human_audit` because they were generated by a deterministic rule, not by a human reviewer.
+
+The intended human rule is: label 1 only when the resume provides evidence for the job's explicit must-have requirements and is plausibly relevant to the selected job family; label 0 when a must-have is missing, evidence is too weak, or the candidate is clearly unrelated. Name, gender cues, college, age, and other protected or proxy signals must not affect labels. `outputs/golden_eval_review_template.csv` contains blank fields for the required human label, uncertainty flag, and reviewer notes.
+
+## 6. Explanation-quality judge
+
+`judge_rubric.md` scores each explanation from 0-2 on evidence fidelity, gap correctness, decision rationale, and actionability, for a total of 0-8. `outputs/explanation_judge_template.csv` contains 30 explanations with blank columns for two independent human raters.
+
+The two-rater scores and judge-versus-human agreement are not yet available. They must be collected before using explanation quality as a headline result; fabricating agreement would make the evaluation misleading.
+
+## 7. Fairness check
+
+The counterfactual test keeps each resume and job constant while changing gender-coded wording, name, or college wording. The final run generated 40 variants across 10 examples:
+
+- Maximum absolute score delta: **0.0**
+- Decision shifts: **0**
+
+This is a regression result, not proof of fairness. It covers only the implemented features and these counterfactual edits; it does not establish fairness across real demographic groups.
+
+## 8. Failure analysis
+
+1. **Synonyms and abbreviations:** A job requiring Power BI or sklearn can be missed when written in an unrecognized form. Common aliases are now normalized, but the vocabulary remains finite. Hypothesis: expand aliases from audited false negatives.
+2. **Weak or mixed requirements:** An Appalachian Highlands Women's Business Center pair (job `56482768`, resume `10247517`) received only Excel evidence and a 41.25 score. Sentence-level requirement rules can under-classify mixed mandatory/optional sentences. Hypothesis: use clause-level requirement extraction and human review for ambiguous wording.
+3. **Missing must-have evidence:** The same job paired with resume `93112113` produced a missing Excel gap and a 0 score. Hypothesis: some resumes express equivalent experience without the exact keyword, so aliasing and evidence-span review are needed.
+4. **Threshold edge cases:** For job `266566927`, resume `10247517` scored 71.25 and advanced, while resume `10265057` scored 61.25 and went to human review. Hypothesis: threshold calibration should use human labels and an explicit false-rejection budget.
+5. **Category hard negatives and career changers:** A Senior Product Marketing Manager posting (`69333422`) paired with an Information Technology resume (`10089434`) received a low score. Category-based negatives are useful for testing, but they can misclassify career changers. Hypothesis: preserve human escalation and add role-transition examples to the audited set.
+
+## 9. What is misleading about my headline number?
+
+The 0.845 accuracy and 0.624 NDCG are measurements against 200 weak draft labels, not recruiter-validated ground truth. Only 24 rows are positive, so majority-class accuracy can look strong while recall is low. The pairs were sampled for evaluation and are not a random applicant population; the first 300 postings are also not a random sample of all jobs. The honest headline is: **a reproducible screening prototype with 0.845 draft-label accuracy and 0.624 NDCG, but only 0.125 recall until human labels and threshold calibration are completed.**
+
+## 10. One more week
+
+I would complete the 200-pair human audit with a written rubric and uncertainty notes; have two human raters score the 30 explanation examples and calculate exact agreement and mean absolute disagreement; calibrate any LLM judge against human consensus; expand skill and requirement aliases from false negatives; add extraction-level annotation for F1; and select the operating threshold against a recruiter-approved false-rejection budget.
+
+## Submission status
+
+- Runnable repository and README: complete.
+- 200-pair file and labeling guide: prepared, human audit pending.
+- Automated evaluation and two baselines: complete.
+- Explanation rubric and 30-row rating template: prepared, human agreement pending.
+- Fairness counterfactual runner: complete; 0.0 maximum score delta and 0 decision shifts.
+- Decision log with 14 decisions: complete.
+- Report: complete and aligned to the assignment brief.

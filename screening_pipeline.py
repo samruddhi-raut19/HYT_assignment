@@ -157,6 +157,8 @@ def evaluate(golden: pd.DataFrame, jobs: pd.DataFrame, resumes: pd.DataFrame) ->
     precision, recall, accuracy = binary_metrics(y, pred)
     d["keyword_score"] = d.skill_overlap / d.skill_overlap.max() * 100 if d.skill_overlap.max() else 0
     d["tfidf_score"] = np.array([tfidf_cosine(jm[str(x.job_id)]["text"], rm[str(x.resume_id)]["text"]) for x in d.itertuples()]) * 100
+    kp, kr, ka = binary_metrics(y, (d.keyword_score >= 62).astype(int))
+    tp, tr, ta = binary_metrics(y, (d.tfidf_score >= 62).astype(int))
     top = d.sort_values(["job_id", "fit_score"], ascending=[True, False])
     ranking = ndcg(top.label.tolist(), top.fit_score.tolist()) if len(top) > 1 else 0
     threshold_rows = []
@@ -167,6 +169,8 @@ def evaluate(golden: pd.DataFrame, jobs: pd.DataFrame, resumes: pd.DataFrame) ->
             "pipeline_recall": round(recall, 3),
             "pipeline_accuracy": round(accuracy, 3), "ndcg_global": round(ranking, 3),
             "keyword_mean_score": round(float(d.keyword_score.mean()), 2), "tfidf_mean_score": round(float(d.tfidf_score.mean()), 2),
+            "keyword_metrics_at_62": {"precision": round(kp, 3), "recall": round(kr, 3), "accuracy": round(ka, 3)},
+            "tfidf_metrics_at_62": {"precision": round(tp, 3), "recall": round(tr, 3), "accuracy": round(ta, 3)},
             "threshold_analysis": threshold_rows,
             "sample_results": d[["job_id", "resume_id", "label", "fit_score", "decision", "evidence", "gaps"]].head(10).to_dict("records"),
             "judge_sample": d[["job_id", "resume_id", "fit_score", "decision", "evidence", "gaps"]].head(30).to_dict("records")}
