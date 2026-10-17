@@ -24,6 +24,16 @@ SKILLS = {
     "scikit-learn", "machine learning", "deep learning", "nlp", "rest", "api",
     "microservices", "agile", "scrum", "jira", "excel", "tableau", "power bi",
 }
+SKILL_ALIASES = {
+    "ms excel": "excel", "microsoft excel": "excel", "spreadsheet": "excel",
+    "powerbi": "power bi", "power-bi": "power bi", "tableau desktop": "tableau",
+    "postgres": "postgresql", "postgre sql": "postgresql", "my sql": "mysql",
+    "scikit learn": "scikit-learn", "sklearn": "scikit-learn", "ml": "machine learning",
+    "artificial intelligence": "machine learning", "restful": "rest", "rest api": "rest",
+    "amazon web services": "aws", "google cloud platform": "gcp",
+    "continuous integration": "ci/cd", "continuous delivery": "ci/cd",
+}
+SKILLS |= set(SKILL_ALIASES)
 EDU = ["b.tech", "btech", "b.e", "bachelor", "master", "m.tech", "mtech", "mba", "ph.d", "computer science", "information technology"]
 TECH_TITLE = re.compile(r"\b(analyst|analytics|business intelligence|data scientist|data analyst|business analyst|reporting|insights|sql|tableau|power bi)\b", re.I)
 ANALYST_CATEGORIES = {"BUSINESS-DEVELOPMENT", "FINANCE", "ACCOUNTANT", "INFORMATION-TECHNOLOGY", "CONSULTANT", "PUBLIC-RELATIONS"}
@@ -53,7 +63,8 @@ def clean(x: object) -> str:
 
 def terms(text: str, vocab: Iterable[str] = SKILLS) -> set[str]:
     low = clean(text).lower()
-    return {s for s in vocab if re.search(r"(?<![a-z0-9])" + re.escape(s) + r"(?![a-z0-9])", low)}
+    found = {s for s in vocab if re.search(r"(?<![a-z0-9])" + re.escape(s) + r"(?![a-z0-9])", low)}
+    return {SKILL_ALIASES.get(s, s) for s in found}
 
 def years(text: str) -> float:
     vals = [float(v) for v in re.findall(r"(\d+(?:\.\d+)?)\s*\+?\s*(?:years?|yrs?)", clean(text).lower())]
@@ -148,11 +159,17 @@ def evaluate(golden: pd.DataFrame, jobs: pd.DataFrame, resumes: pd.DataFrame) ->
     d["tfidf_score"] = np.array([tfidf_cosine(jm[str(x.job_id)]["text"], rm[str(x.resume_id)]["text"]) for x in d.itertuples()]) * 100
     top = d.sort_values(["job_id", "fit_score"], ascending=[True, False])
     ranking = ndcg(top.label.tolist(), top.fit_score.tolist()) if len(top) > 1 else 0
+    threshold_rows = []
+    for threshold in range(40, 81, 2):
+        p, r, a = binary_metrics(y, (d.fit_score >= threshold).astype(int))
+        threshold_rows.append({"threshold": threshold, "precision": round(p, 3), "recall": round(r, 3), "accuracy": round(a, 3)})
     return {"n": int(len(d)), "pipeline_precision": round(precision, 3),
             "pipeline_recall": round(recall, 3),
             "pipeline_accuracy": round(accuracy, 3), "ndcg_global": round(ranking, 3),
             "keyword_mean_score": round(float(d.keyword_score.mean()), 2), "tfidf_mean_score": round(float(d.tfidf_score.mean()), 2),
-            "sample_results": d[["job_id", "resume_id", "label", "fit_score", "decision", "evidence", "gaps"]].head(10).to_dict("records")}
+            "threshold_analysis": threshold_rows,
+            "sample_results": d[["job_id", "resume_id", "label", "fit_score", "decision", "evidence", "gaps"]].head(10).to_dict("records"),
+            "judge_sample": d[["job_id", "resume_id", "fit_score", "decision", "evidence", "gaps"]].head(30).to_dict("records")}
 
 def main() -> None:
     ap = argparse.ArgumentParser(); ap.add_argument("--jobs", default="postings.csv"); ap.add_argument("--resumes", default="Resume.csv"); ap.add_argument("--out", default="outputs"); ap.add_argument("--max-jobs", type=int, default=300, help="subsample size; default keeps the run under 15 minutes"); args = ap.parse_args()
@@ -165,6 +182,18 @@ def main() -> None:
     else:
         golden = build_golden(jobs, resumes); golden.to_csv(golden_path, index=False)
     metrics = evaluate(golden, jobs, resumes); (out / "metrics.json").write_text(json.dumps(metrics, indent=2), encoding="utf-8")
+    review = golden.copy()
+    review["human_label"] = ""
+    review["reviewer_notes"] = ""
+    review["uncertain"] = ""
+    review.to_csv(out / "golden_eval_review_template.csv", index=False)
+    judge = pd.DataFrame(metrics.get("judge_sample", []))
+    if not judge.empty:
+        judge["rater_1_total"] = ""
+        judge["rater_2_total"] = ""
+        judge["rater_1_notes"] = ""
+        judge["rater_2_notes"] = ""
+        judge.to_csv(out / "explanation_judge_template.csv", index=False)
     job = extract_job(jobs.iloc[0]); sample = []
     for _, r in resumes.head(10).iterrows(): sample.append({"job": job, "resume": extract_resume(r), "result": score(job, extract_resume(r))})
     (out / "sample_screening.json").write_text(json.dumps(sample, indent=2), encoding="utf-8")

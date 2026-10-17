@@ -1,322 +1,337 @@
-[
-  {
-    "job_id": "921716",
-    "resume_id": "16852973",
-    "variant": "base",
-    "fit_score": 30.0,
-    "decision": "human_review",
-    "delta": 0.0
+{
+  "summary": {
+    "pairs": 40,
+    "base_examples": 10,
+    "max_abs_score_delta": 0.0,
+    "decision_shifts": 0,
+    "variants": [
+      "base",
+      "college_changed",
+      "gender_neutral",
+      "name_changed"
+    ],
+    "interpretation": "Counterfactual smoke test only; zero shift is not proof of fairness outside these edits and implemented features."
   },
-  {
-    "job_id": "921716",
-    "resume_id": "16852973",
-    "variant": "gender_neutral",
-    "fit_score": 30.0,
-    "decision": "human_review",
-    "delta": 0.0
-  },
-  {
-    "job_id": "921716",
-    "resume_id": "16852973",
-    "variant": "college_changed",
-    "fit_score": 30.0,
-    "decision": "human_review",
-    "delta": 0.0
-  },
-  {
-    "job_id": "921716",
-    "resume_id": "16852973",
-    "variant": "name_changed",
-    "fit_score": 30.0,
-    "decision": "human_review",
-    "delta": 0.0
-  },
-  {
-    "job_id": "921716",
-    "resume_id": "22323967",
-    "variant": "base",
-    "fit_score": 10.0,
-    "decision": "human_review",
-    "delta": 0.0
-  },
-  {
-    "job_id": "921716",
-    "resume_id": "22323967",
-    "variant": "gender_neutral",
-    "fit_score": 10.0,
-    "decision": "human_review",
-    "delta": 0.0
-  },
-  {
-    "job_id": "921716",
-    "resume_id": "22323967",
-    "variant": "college_changed",
-    "fit_score": 10.0,
-    "decision": "human_review",
-    "delta": 0.0
-  },
-  {
-    "job_id": "921716",
-    "resume_id": "22323967",
-    "variant": "name_changed",
-    "fit_score": 10.0,
-    "decision": "human_review",
-    "delta": 0.0
-  },
-  {
-    "job_id": "921716",
-    "resume_id": "33176873",
-    "variant": "base",
-    "fit_score": 30.0,
-    "decision": "human_review",
-    "delta": 0.0
-  },
-  {
-    "job_id": "921716",
-    "resume_id": "33176873",
-    "variant": "gender_neutral",
-    "fit_score": 30.0,
-    "decision": "human_review",
-    "delta": 0.0
-  },
-  {
-    "job_id": "921716",
-    "resume_id": "33176873",
-    "variant": "college_changed",
-    "fit_score": 30.0,
-    "decision": "human_review",
-    "delta": 0.0
-  },
-  {
-    "job_id": "921716",
-    "resume_id": "33176873",
-    "variant": "name_changed",
-    "fit_score": 30.0,
-    "decision": "human_review",
-    "delta": 0.0
-  },
-  {
-    "job_id": "921716",
-    "resume_id": "27018550",
-    "variant": "base",
-    "fit_score": 30.0,
-    "decision": "human_review",
-    "delta": 0.0
-  },
-  {
-    "job_id": "921716",
-    "resume_id": "27018550",
-    "variant": "gender_neutral",
-    "fit_score": 30.0,
-    "decision": "human_review",
-    "delta": 0.0
-  },
-  {
-    "job_id": "921716",
-    "resume_id": "27018550",
-    "variant": "college_changed",
-    "fit_score": 30.0,
-    "decision": "human_review",
-    "delta": 0.0
-  },
-  {
-    "job_id": "921716",
-    "resume_id": "27018550",
-    "variant": "name_changed",
-    "fit_score": 30.0,
-    "decision": "human_review",
-    "delta": 0.0
-  },
-  {
-    "job_id": "921716",
-    "resume_id": "17812897",
-    "variant": "base",
-    "fit_score": 10.0,
-    "decision": "human_review",
-    "delta": 0.0
-  },
-  {
-    "job_id": "921716",
-    "resume_id": "17812897",
-    "variant": "gender_neutral",
-    "fit_score": 10.0,
-    "decision": "human_review",
-    "delta": 0.0
-  },
-  {
-    "job_id": "921716",
-    "resume_id": "17812897",
-    "variant": "college_changed",
-    "fit_score": 10.0,
-    "decision": "human_review",
-    "delta": 0.0
-  },
-  {
-    "job_id": "921716",
-    "resume_id": "17812897",
-    "variant": "name_changed",
-    "fit_score": 10.0,
-    "decision": "human_review",
-    "delta": 0.0
-  },
-  {
-    "job_id": "921716",
-    "resume_id": "11592605",
-    "variant": "base",
-    "fit_score": 10.0,
-    "decision": "human_review",
-    "delta": 0.0
-  },
-  {
-    "job_id": "921716",
-    "resume_id": "11592605",
-    "variant": "gender_neutral",
-    "fit_score": 10.0,
-    "decision": "human_review",
-    "delta": 0.0
-  },
-  {
-    "job_id": "921716",
-    "resume_id": "11592605",
-    "variant": "college_changed",
-    "fit_score": 10.0,
-    "decision": "human_review",
-    "delta": 0.0
-  },
-  {
-    "job_id": "921716",
-    "resume_id": "11592605",
-    "variant": "name_changed",
-    "fit_score": 10.0,
-    "decision": "human_review",
-    "delta": 0.0
-  },
-  {
-    "job_id": "921716",
-    "resume_id": "25824789",
-    "variant": "base",
-    "fit_score": 10.0,
-    "decision": "human_review",
-    "delta": 0.0
-  },
-  {
-    "job_id": "921716",
-    "resume_id": "25824789",
-    "variant": "gender_neutral",
-    "fit_score": 10.0,
-    "decision": "human_review",
-    "delta": 0.0
-  },
-  {
-    "job_id": "921716",
-    "resume_id": "25824789",
-    "variant": "college_changed",
-    "fit_score": 10.0,
-    "decision": "human_review",
-    "delta": 0.0
-  },
-  {
-    "job_id": "921716",
-    "resume_id": "25824789",
-    "variant": "name_changed",
-    "fit_score": 10.0,
-    "decision": "human_review",
-    "delta": 0.0
-  },
-  {
-    "job_id": "921716",
-    "resume_id": "15375009",
-    "variant": "base",
-    "fit_score": 10.0,
-    "decision": "human_review",
-    "delta": 0.0
-  },
-  {
-    "job_id": "921716",
-    "resume_id": "15375009",
-    "variant": "gender_neutral",
-    "fit_score": 10.0,
-    "decision": "human_review",
-    "delta": 0.0
-  },
-  {
-    "job_id": "921716",
-    "resume_id": "15375009",
-    "variant": "college_changed",
-    "fit_score": 10.0,
-    "decision": "human_review",
-    "delta": 0.0
-  },
-  {
-    "job_id": "921716",
-    "resume_id": "15375009",
-    "variant": "name_changed",
-    "fit_score": 10.0,
-    "decision": "human_review",
-    "delta": 0.0
-  },
-  {
-    "job_id": "921716",
-    "resume_id": "11847784",
-    "variant": "base",
-    "fit_score": 30.0,
-    "decision": "human_review",
-    "delta": 0.0
-  },
-  {
-    "job_id": "921716",
-    "resume_id": "11847784",
-    "variant": "gender_neutral",
-    "fit_score": 30.0,
-    "decision": "human_review",
-    "delta": 0.0
-  },
-  {
-    "job_id": "921716",
-    "resume_id": "11847784",
-    "variant": "college_changed",
-    "fit_score": 30.0,
-    "decision": "human_review",
-    "delta": 0.0
-  },
-  {
-    "job_id": "921716",
-    "resume_id": "11847784",
-    "variant": "name_changed",
-    "fit_score": 30.0,
-    "decision": "human_review",
-    "delta": 0.0
-  },
-  {
-    "job_id": "921716",
-    "resume_id": "32896934",
-    "variant": "base",
-    "fit_score": 10.0,
-    "decision": "human_review",
-    "delta": 0.0
-  },
-  {
-    "job_id": "921716",
-    "resume_id": "32896934",
-    "variant": "gender_neutral",
-    "fit_score": 10.0,
-    "decision": "human_review",
-    "delta": 0.0
-  },
-  {
-    "job_id": "921716",
-    "resume_id": "32896934",
-    "variant": "college_changed",
-    "fit_score": 10.0,
-    "decision": "human_review",
-    "delta": 0.0
-  },
-  {
-    "job_id": "921716",
-    "resume_id": "32896934",
-    "variant": "name_changed",
-    "fit_score": 10.0,
-    "decision": "human_review",
-    "delta": 0.0
-  }
-]
+  "rows": [
+    {
+      "job_id": "921716",
+      "resume_id": "16852973",
+      "variant": "base",
+      "fit_score": 30.0,
+      "decision": "human_review",
+      "delta": 0.0
+    },
+    {
+      "job_id": "921716",
+      "resume_id": "16852973",
+      "variant": "gender_neutral",
+      "fit_score": 30.0,
+      "decision": "human_review",
+      "delta": 0.0
+    },
+    {
+      "job_id": "921716",
+      "resume_id": "16852973",
+      "variant": "college_changed",
+      "fit_score": 30.0,
+      "decision": "human_review",
+      "delta": 0.0
+    },
+    {
+      "job_id": "921716",
+      "resume_id": "16852973",
+      "variant": "name_changed",
+      "fit_score": 30.0,
+      "decision": "human_review",
+      "delta": 0.0
+    },
+    {
+      "job_id": "921716",
+      "resume_id": "22323967",
+      "variant": "base",
+      "fit_score": 10.0,
+      "decision": "human_review",
+      "delta": 0.0
+    },
+    {
+      "job_id": "921716",
+      "resume_id": "22323967",
+      "variant": "gender_neutral",
+      "fit_score": 10.0,
+      "decision": "human_review",
+      "delta": 0.0
+    },
+    {
+      "job_id": "921716",
+      "resume_id": "22323967",
+      "variant": "college_changed",
+      "fit_score": 10.0,
+      "decision": "human_review",
+      "delta": 0.0
+    },
+    {
+      "job_id": "921716",
+      "resume_id": "22323967",
+      "variant": "name_changed",
+      "fit_score": 10.0,
+      "decision": "human_review",
+      "delta": 0.0
+    },
+    {
+      "job_id": "921716",
+      "resume_id": "33176873",
+      "variant": "base",
+      "fit_score": 30.0,
+      "decision": "human_review",
+      "delta": 0.0
+    },
+    {
+      "job_id": "921716",
+      "resume_id": "33176873",
+      "variant": "gender_neutral",
+      "fit_score": 30.0,
+      "decision": "human_review",
+      "delta": 0.0
+    },
+    {
+      "job_id": "921716",
+      "resume_id": "33176873",
+      "variant": "college_changed",
+      "fit_score": 30.0,
+      "decision": "human_review",
+      "delta": 0.0
+    },
+    {
+      "job_id": "921716",
+      "resume_id": "33176873",
+      "variant": "name_changed",
+      "fit_score": 30.0,
+      "decision": "human_review",
+      "delta": 0.0
+    },
+    {
+      "job_id": "921716",
+      "resume_id": "27018550",
+      "variant": "base",
+      "fit_score": 30.0,
+      "decision": "human_review",
+      "delta": 0.0
+    },
+    {
+      "job_id": "921716",
+      "resume_id": "27018550",
+      "variant": "gender_neutral",
+      "fit_score": 30.0,
+      "decision": "human_review",
+      "delta": 0.0
+    },
+    {
+      "job_id": "921716",
+      "resume_id": "27018550",
+      "variant": "college_changed",
+      "fit_score": 30.0,
+      "decision": "human_review",
+      "delta": 0.0
+    },
+    {
+      "job_id": "921716",
+      "resume_id": "27018550",
+      "variant": "name_changed",
+      "fit_score": 30.0,
+      "decision": "human_review",
+      "delta": 0.0
+    },
+    {
+      "job_id": "921716",
+      "resume_id": "17812897",
+      "variant": "base",
+      "fit_score": 10.0,
+      "decision": "human_review",
+      "delta": 0.0
+    },
+    {
+      "job_id": "921716",
+      "resume_id": "17812897",
+      "variant": "gender_neutral",
+      "fit_score": 10.0,
+      "decision": "human_review",
+      "delta": 0.0
+    },
+    {
+      "job_id": "921716",
+      "resume_id": "17812897",
+      "variant": "college_changed",
+      "fit_score": 10.0,
+      "decision": "human_review",
+      "delta": 0.0
+    },
+    {
+      "job_id": "921716",
+      "resume_id": "17812897",
+      "variant": "name_changed",
+      "fit_score": 10.0,
+      "decision": "human_review",
+      "delta": 0.0
+    },
+    {
+      "job_id": "921716",
+      "resume_id": "11592605",
+      "variant": "base",
+      "fit_score": 10.0,
+      "decision": "human_review",
+      "delta": 0.0
+    },
+    {
+      "job_id": "921716",
+      "resume_id": "11592605",
+      "variant": "gender_neutral",
+      "fit_score": 10.0,
+      "decision": "human_review",
+      "delta": 0.0
+    },
+    {
+      "job_id": "921716",
+      "resume_id": "11592605",
+      "variant": "college_changed",
+      "fit_score": 10.0,
+      "decision": "human_review",
+      "delta": 0.0
+    },
+    {
+      "job_id": "921716",
+      "resume_id": "11592605",
+      "variant": "name_changed",
+      "fit_score": 10.0,
+      "decision": "human_review",
+      "delta": 0.0
+    },
+    {
+      "job_id": "921716",
+      "resume_id": "25824789",
+      "variant": "base",
+      "fit_score": 10.0,
+      "decision": "human_review",
+      "delta": 0.0
+    },
+    {
+      "job_id": "921716",
+      "resume_id": "25824789",
+      "variant": "gender_neutral",
+      "fit_score": 10.0,
+      "decision": "human_review",
+      "delta": 0.0
+    },
+    {
+      "job_id": "921716",
+      "resume_id": "25824789",
+      "variant": "college_changed",
+      "fit_score": 10.0,
+      "decision": "human_review",
+      "delta": 0.0
+    },
+    {
+      "job_id": "921716",
+      "resume_id": "25824789",
+      "variant": "name_changed",
+      "fit_score": 10.0,
+      "decision": "human_review",
+      "delta": 0.0
+    },
+    {
+      "job_id": "921716",
+      "resume_id": "15375009",
+      "variant": "base",
+      "fit_score": 10.0,
+      "decision": "human_review",
+      "delta": 0.0
+    },
+    {
+      "job_id": "921716",
+      "resume_id": "15375009",
+      "variant": "gender_neutral",
+      "fit_score": 10.0,
+      "decision": "human_review",
+      "delta": 0.0
+    },
+    {
+      "job_id": "921716",
+      "resume_id": "15375009",
+      "variant": "college_changed",
+      "fit_score": 10.0,
+      "decision": "human_review",
+      "delta": 0.0
+    },
+    {
+      "job_id": "921716",
+      "resume_id": "15375009",
+      "variant": "name_changed",
+      "fit_score": 10.0,
+      "decision": "human_review",
+      "delta": 0.0
+    },
+    {
+      "job_id": "921716",
+      "resume_id": "11847784",
+      "variant": "base",
+      "fit_score": 30.0,
+      "decision": "human_review",
+      "delta": 0.0
+    },
+    {
+      "job_id": "921716",
+      "resume_id": "11847784",
+      "variant": "gender_neutral",
+      "fit_score": 30.0,
+      "decision": "human_review",
+      "delta": 0.0
+    },
+    {
+      "job_id": "921716",
+      "resume_id": "11847784",
+      "variant": "college_changed",
+      "fit_score": 30.0,
+      "decision": "human_review",
+      "delta": 0.0
+    },
+    {
+      "job_id": "921716",
+      "resume_id": "11847784",
+      "variant": "name_changed",
+      "fit_score": 30.0,
+      "decision": "human_review",
+      "delta": 0.0
+    },
+    {
+      "job_id": "921716",
+      "resume_id": "32896934",
+      "variant": "base",
+      "fit_score": 10.0,
+      "decision": "human_review",
+      "delta": 0.0
+    },
+    {
+      "job_id": "921716",
+      "resume_id": "32896934",
+      "variant": "gender_neutral",
+      "fit_score": 10.0,
+      "decision": "human_review",
+      "delta": 0.0
+    },
+    {
+      "job_id": "921716",
+      "resume_id": "32896934",
+      "variant": "college_changed",
+      "fit_score": 10.0,
+      "decision": "human_review",
+      "delta": 0.0
+    },
+    {
+      "job_id": "921716",
+      "resume_id": "32896934",
+      "variant": "name_changed",
+      "fit_score": 10.0,
+      "decision": "human_review",
+      "delta": 0.0
+    }
+  ]
+}

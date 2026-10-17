@@ -1,11 +1,139 @@
 {
   "n": 200,
-  "pipeline_precision": 0.286,
-  "pipeline_recall": 0.167,
-  "pipeline_accuracy": 0.85,
-  "ndcg_global": 0.627,
+  "pipeline_precision": 0.231,
+  "pipeline_recall": 0.125,
+  "pipeline_accuracy": 0.845,
+  "ndcg_global": 0.62,
   "keyword_mean_score": 6.92,
   "tfidf_mean_score": 63.75,
+  "threshold_analysis": [
+    {
+      "threshold": 40,
+      "precision": 0.34,
+      "recall": 0.708,
+      "accuracy": 0.8
+    },
+    {
+      "threshold": 42,
+      "precision": 0.368,
+      "recall": 0.583,
+      "accuracy": 0.83
+    },
+    {
+      "threshold": 44,
+      "precision": 0.351,
+      "recall": 0.542,
+      "accuracy": 0.825
+    },
+    {
+      "threshold": 46,
+      "precision": 0.351,
+      "recall": 0.542,
+      "accuracy": 0.825
+    },
+    {
+      "threshold": 48,
+      "precision": 0.351,
+      "recall": 0.542,
+      "accuracy": 0.825
+    },
+    {
+      "threshold": 50,
+      "precision": 0.333,
+      "recall": 0.5,
+      "accuracy": 0.82
+    },
+    {
+      "threshold": 52,
+      "precision": 0.292,
+      "recall": 0.292,
+      "accuracy": 0.83
+    },
+    {
+      "threshold": 54,
+      "precision": 0.292,
+      "recall": 0.292,
+      "accuracy": 0.83
+    },
+    {
+      "threshold": 56,
+      "precision": 0.19,
+      "recall": 0.167,
+      "accuracy": 0.815
+    },
+    {
+      "threshold": 58,
+      "precision": 0.15,
+      "recall": 0.125,
+      "accuracy": 0.81
+    },
+    {
+      "threshold": 60,
+      "precision": 0.15,
+      "recall": 0.125,
+      "accuracy": 0.81
+    },
+    {
+      "threshold": 62,
+      "precision": 0.231,
+      "recall": 0.125,
+      "accuracy": 0.845
+    },
+    {
+      "threshold": 64,
+      "precision": 0.25,
+      "recall": 0.125,
+      "accuracy": 0.85
+    },
+    {
+      "threshold": 66,
+      "precision": 0.182,
+      "recall": 0.083,
+      "accuracy": 0.845
+    },
+    {
+      "threshold": 68,
+      "precision": 0.182,
+      "recall": 0.083,
+      "accuracy": 0.845
+    },
+    {
+      "threshold": 70,
+      "precision": 0.182,
+      "recall": 0.083,
+      "accuracy": 0.845
+    },
+    {
+      "threshold": 72,
+      "precision": 0.0,
+      "recall": 0.0,
+      "accuracy": 0.88
+    },
+    {
+      "threshold": 74,
+      "precision": 0.0,
+      "recall": 0.0,
+      "accuracy": 0.88
+    },
+    {
+      "threshold": 76,
+      "precision": 0.0,
+      "recall": 0.0,
+      "accuracy": 0.88
+    },
+    {
+      "threshold": 78,
+      "precision": 0.0,
+      "recall": 0.0,
+      "accuracy": 0.88
+    },
+    {
+      "threshold": 80,
+      "precision": 0.0,
+      "recall": 0.0,
+      "accuracy": 0.88
+    }
+  ],
   "sample_results": [
     {
       "job_id": 91700727,
@@ -99,6 +227,266 @@
       "resume_id": 10089434,
       "label": 0,
       "fit_score": 30.0,
+      "decision": "human_review",
+      "evidence": [],
+      "gaps": []
+    }
+  ],
+  "judge_sample": [
+    {
+      "job_id": 91700727,
+      "resume_id": 10089434,
+      "fit_score": 30.0,
+      "decision": "human_review",
+      "evidence": [],
+      "gaps": []
+    },
+    {
+      "job_id": 91700727,
+      "resume_id": 10247517,
+      "fit_score": 30.0,
+      "decision": "human_review",
+      "evidence": [],
+      "gaps": []
+    },
+    {
+      "job_id": 91700727,
+      "resume_id": 93112113,
+      "fit_score": 30.0,
+      "decision": "human_review",
+      "evidence": [],
+      "gaps": []
+    },
+    {
+      "job_id": 56482768,
+      "resume_id": 10247517,
+      "fit_score": 41.25,
+      "decision": "human_review",
+      "evidence": [
+        "excel"
+      ],
+      "gaps": []
+    },
+    {
+      "job_id": 56482768,
+      "resume_id": 10265057,
+      "fit_score": 41.25,
+      "decision": "human_review",
+      "evidence": [
+        "excel"
+      ],
+      "gaps": []
+    },
+    {
+      "job_id": 56482768,
+      "resume_id": 93112113,
+      "fit_score": 0.0,
+      "decision": "human_review",
+      "evidence": [],
+      "gaps": [
+        "excel"
+      ]
+    },
+    {
+      "job_id": 69333422,
+      "resume_id": 10089434,
+      "fit_score": 15.0,
+      "decision": "human_review",
+      "evidence": [],
+      "gaps": []
+    },
+    {
+      "job_id": 69333422,
+      "resume_id": 10247517,
+      "fit_score": 10.0,
+      "decision": "human_review",
+      "evidence": [],
+      "gaps": []
+    },
+    {
+      "job_id": 69333422,
+      "resume_id": 93112113,
+      "fit_score": 10.0,
+      "decision": "human_review",
+      "evidence": [],
+      "gaps": []
+    },
+    {
+      "job_id": 95428182,
+      "resume_id": 10089434,
+      "fit_score": 30.0,
+      "decision": "human_review",
+      "evidence": [],
+      "gaps": []
+    },
+    {
+      "job_id": 95428182,
+      "resume_id": 10247517,
+      "fit_score": 30.0,
+      "decision": "human_review",
+      "evidence": [],
+      "gaps": []
+    },
+    {
+      "job_id": 95428182,
+      "resume_id": 93112113,
+      "fit_score": 20.0,
+      "decision": "human_review",
+      "evidence": [],
+      "gaps": []
+    },
+    {
+      "job_id": 115639136,
+      "resume_id": 10247517,
+      "fit_score": 51.25,
+      "decision": "human_review",
+      "evidence": [
+        "excel"
+      ],
+      "gaps": []
+    },
+    {
+      "job_id": 115639136,
+      "resume_id": 10265057,
+      "fit_score": 41.25,
+      "decision": "human_review",
+      "evidence": [
+        "excel"
+      ],
+      "gaps": []
+    },
+    {
+      "job_id": 115639136,
+      "resume_id": 93112113,
+      "fit_score": 0.0,
+      "decision": "human_review",
+      "evidence": [],
+      "gaps": [
+        "excel"
+      ]
+    },
+    {
+      "job_id": 266566927,
+      "resume_id": 10247517,
+      "fit_score": 71.25,
+      "decision": "advance",
+      "evidence": [
+        "excel"
+      ],
+      "gaps": []
+    },
+    {
+      "job_id": 266566927,
+      "resume_id": 10265057,
+      "fit_score": 61.25,
+      "decision": "human_review",
+      "evidence": [
+        "excel"
+      ],
+      "gaps": []
+    },
+    {
+      "job_id": 266566927,
+      "resume_id": 93112113,
+      "fit_score": 20.0,
+      "decision": "human_review",
+      "evidence": [],
+      "gaps": [
+        "excel"
+      ]
+    },
+    {
+      "job_id": 658723396,
+      "resume_id": 10089434,
+      "fit_score": 10.0,
+      "decision": "human_review",
+      "evidence": [],
+      "gaps": []
+    },
+    {
+      "job_id": 658723396,
+      "resume_id": 10247517,
+      "fit_score": 10.0,
+      "decision": "human_review",
+      "evidence": [],
+      "gaps": []
+    },
+    {
+      "job_id": 658723396,
+      "resume_id": 93112113,
+      "fit_score": 10.0,
+      "decision": "human_review",
+      "evidence": [],
+      "gaps": []
+    },
+    {
+      "job_id": 1014822088,
+      "resume_id": 10089434,
+      "fit_score": 15.0,
+      "decision": "human_review",
+      "evidence": [],
+      "gaps": []
+    },
+    {
+      "job_id": 1014822088,
+      "resume_id": 10247517,
+      "fit_score": 10.0,
+      "decision": "human_review",
+      "evidence": [],
+      "gaps": []
+    },
+    {
+      "job_id": 1014822088,
+      "resume_id": 93112113,
+      "fit_score": 0.0,
+      "decision": "human_review",
+      "evidence": [],
+      "gaps": []
+    },
+    {
+      "job_id": 1093227543,
+      "resume_id": 10089434,
+      "fit_score": 35.0,
+      "decision": "human_review",
+      "evidence": [],
+      "gaps": []
+    },
+    {
+      "job_id": 1093227543,
+      "resume_id": 10247517,
+      "fit_score": 30.0,
+      "decision": "human_review",
+      "evidence": [],
+      "gaps": []
+    },
+    {
+      "job_id": 1093227543,
+      "resume_id": 93112113,
+      "fit_score": 20.0,
+      "decision": "human_review",
+      "evidence": [],
+      "gaps": []
+    },
+    {
+      "job_id": 1143359956,
+      "resume_id": 10089434,
+      "fit_score": 30.0,
+      "decision": "human_review",
+      "evidence": [],
+      "gaps": []
+    },
+    {
+      "job_id": 1143359956,
+      "resume_id": 10247517,
+      "fit_score": 30.0,
+      "decision": "human_review",
+      "evidence": [],
+      "gaps": []
+    },
+    {
+      "job_id": 1143359956,
+      "resume_id": 93112113,
+      "fit_score": 20.0,
       "decision": "human_review",
       "evidence": [],
       "gaps": []

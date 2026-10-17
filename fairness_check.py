@@ -20,7 +20,15 @@ def main():
             result = score(item["job"], {**base, "text": text})
             out.append({"job_id": item["job"]["job_id"], "resume_id": base["resume_id"], "variant": name,
                         "fit_score": result["fit_score"], "decision": result["decision"], "delta": round(result["fit_score"] - base_score, 4)})
-    Path("outputs/fairness_check.json").write_text(json.dumps(out, indent=2), encoding="utf-8")
-    print(json.dumps({"pairs": len(out), "max_abs_score_delta": max(abs(x["delta"]) for x in out)}, indent=2))
+    summary = {
+        "pairs": len(out),
+        "base_examples": len(rows),
+        "max_abs_score_delta": max(abs(x["delta"]) for x in out),
+        "decision_shifts": sum(1 for x in out if x["variant"] != "base" and x["decision"] != next(y["decision"] for y in out if y["resume_id"] == x["resume_id"] and y["variant"] == "base")),
+        "variants": sorted({x["variant"] for x in out}),
+        "interpretation": "Counterfactual smoke test only; zero shift is not proof of fairness outside these edits and implemented features."
+    }
+    Path("outputs/fairness_check.json").write_text(json.dumps({"summary": summary, "rows": out}, indent=2), encoding="utf-8")
+    print(json.dumps(summary, indent=2))
 
 if __name__ == "__main__": main()
