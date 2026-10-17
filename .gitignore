@@ -1,5 +1,8 @@
 postings.csv
 Resume.csv
+.env
+.env.*
+!.env.example
 resume_extracted/
 postings_extracted/
 report.md
